@@ -5,9 +5,10 @@ dependencies:
         - sudo dpkg -i hugo*.deb
         - ls
         - pwd
-        - hugo -v
+        - cd hugo
+        - hugo
 deployment:
   prod:
     branch: master
     commands:
-      - aws s3 sync /home/ubuntu/gdpr s3://gdpr-patterns --delete
+      - aws s3 sync /home/ubuntu/gdpr/hugo/public s3://gdpr-patterns --delete
