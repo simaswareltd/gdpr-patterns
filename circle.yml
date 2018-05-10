@@ -11,4 +11,4 @@ deployment:
   prod:
     branch: master
     commands:
-      - aws s3 sync /home/ubuntu/gdpr/hugo/public s3://gdpr-patterns --delete
+      - aws s3 sync /home/ubuntu/gdpr-patterns/hugo/public s3://gdpr-patterns --delete
