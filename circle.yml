@@ -1,10 +1,12 @@
 dependencies:
     override:
-        - sudo pip install awscli
         - wget https://github.com/spf13/hugo/releases/download/v0.18/hugo_0.18-64bit.deb
         - sudo dpkg -i hugo*.deb
-        - git submodule init && git submodule update 
-        - cd hugo && pwd && ls && hugo && ls
+        - git submodule init 
+        - git submodule update 
+        - cd hugo
+        - hugo
+        - sudo pip install awscli
 deployment:
   prod:
     branch: master
