@@ -5,7 +5,7 @@ dependencies:
         - sudo dpkg -i hugo*.deb
         - ls
         - pwd
-        - cd hugo && pwd $$ hugo
+        - cd hugo && pwd && ls && hugo && ls
 deployment:
   prod:
     branch: master
