@@ -3,8 +3,7 @@ dependencies:
         - sudo pip install awscli
         - wget https://github.com/spf13/hugo/releases/download/v0.18/hugo_0.18-64bit.deb
         - sudo dpkg -i hugo*.deb
-        - ls
-        - pwd
+        - git submodule init && git submodule update 
         - cd hugo && pwd && ls && hugo && ls
 deployment:
   prod:
