@@ -4,8 +4,7 @@ dependencies:
         - sudo dpkg -i hugo*.deb
         - git submodule init 
         - git submodule update 
-        - cd hugo
-        - hugo
+        - cd hugo && hugo -v && rm -rf public && cd ..
         - sudo pip install awscli
 deployment:
   prod:
