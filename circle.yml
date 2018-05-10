@@ -11,3 +11,7 @@ deployment:
     branch: master
     commands:
       - aws s3 sync /home/ubuntu/gdpr-patterns/hugo/public s3://gdpr-patterns --delete
+
+test:
+  override:
+    - echo "test"
